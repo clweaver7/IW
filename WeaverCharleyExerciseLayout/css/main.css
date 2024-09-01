@@ -1,0 +1,100 @@
+
+/*CSS Section= Alt box model*/
+*{
+    box-sizing: border-box;
+}
+
+/*CSS Section= Wrapper styles*/
+#wrapper{
+    width: 95%;
+    border: 3px solid rgb(235, 13, 13);
+    margin: auto;
+    padding: 1.25rem;
+        /* utilize the new google font linked in the html. fallback font of sans-serif*/
+    font-family: "Mukta", sans-serif;
+    color: rgb(255, 255, 255);
+    /* 18px font size converted to rem */
+    font-size: 1.125rem;
+    text-align: justify;
+    /* wider line height to allow for easier readability */
+    line-height: 1.25;
+    background-color: rgb(7, 152, 248);
+    /* add padding, margin, and border for all of the body */
+    padding: 1.25rem;
+}
+
+/*previous way of centering image
+img{
+    margin: auto;
+    display: block;
+}*/
+
+/*flex way of centering image*/
+#image{
+    display: flex;
+    justify-content: center;
+}
+
+/*CSS Section= General Styles*/
+h1{
+    text-shadow: 2.5px 2.5px 2.5px rgb(235, 13, 13); 
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    /* 60px font size converted to rem */
+    font-size: 3.75rem;
+}
+h2{
+    text-shadow: 2.5px 2.5px 2.5px rgb(13, 202, 235);
+    background-color: rgb(2, 2, 175);
+    /* 36px font size converted to rem */
+    font-size: 2.25rem;
+    /*limit the width of the h2 property*/
+    width: 35%;
+    /* add padding for the h2 property */
+    padding: 15px;
+}
+h3{
+    font-size: 1.5rem;
+    /* font style as italic to differentiate the h3 heading */
+    font-style: italic;
+}
+p{
+    /* adding margin on the paragraph elements to further indent */
+    margin-left: 1.25rem;
+}
+/* flex navigation row for the main nav and column for the nested nav*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 42px;
+}
+/*nested navs have column direction*/
+#nestedSynopsisList{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#nestedProductionList{
+        display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/*CSS Section= Link styles*/
+a{
+    /*update link color*/
+    text-decoration: none;
+    color: rgb(41, 0, 189);
+}
+a:hover{
+    /*update link hover color*/
+    color: rgb(238, 215, 7);
+}

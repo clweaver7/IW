@@ -286,11 +286,11 @@
           <form>
             <div>
               <label for="firstname">First Name</label>
-              <input type="text" id="firstname" required/>
+              <input type="text" id="firstname" minlength="1" maxlength="25" required/>
             </div>
             <div>
               <label for="lastname">Last Name</label>
-              <input type="text" id="lastname" required/>
+              <input type="text" id="lastname" minlength="1" maxlength="30" required/>
             </div>
             <div>
               <label for="email">Email</label>
@@ -301,7 +301,7 @@
               <textarea id="question" cols="20" rows="5"></textarea>
             </div>
             <div>
-              <input type="checkbox" id="marketing" />
+              <input type="checkbox" id="marketing" required/>
               <label for="marketing">Opt into marketing communications</label>
             </div>
             <div>
